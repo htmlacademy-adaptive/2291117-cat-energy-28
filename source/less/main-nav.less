@@ -1,0 +1,21 @@
+.site-list__link {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.main-nav__toggle {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url(../img/button-toggle.svg);
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 16px;
+  }
+}

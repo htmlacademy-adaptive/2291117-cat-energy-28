@@ -1,0 +1,65 @@
+.nutricion {
+  margin: 0 20px 20px 20px;
+  padding: 0;
+  outline: 2px solid #8b0000;
+}
+
+.nutricion__wrapper {
+  background-color: #F2F2F2;
+}
+
+.nutricion__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.nutricion__title--slim::before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/nutricion__title--slim.png);
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 53px;
+}
+
+.nutricion__title--pro::before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/nutricion__title--pro.png);
+  background-repeat: no-repeat;
+  width: 67px;
+  height: 50px;
+}
+
+.nutricion__link {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url(../img/nutricion__link-arrov.svg);
+    width: 24px;
+    height: 12px;
+    background-repeat: no-repeat;
+  }
+}
+
+.nutricion__description {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #444444;
+  position: relative;
+}
