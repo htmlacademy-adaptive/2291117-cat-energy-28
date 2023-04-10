@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html class="form" lang="ru">
+<html class="page-form" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Кэт энерджи. Подбор программы</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="form__body">
+  <body class="page-form__body">
     <header class="main-header">
       <a class="main-header__logo logo">
         <img class="main-header__logo-image" src="img/logo-mobile.png" width="33.32" height="37.61" alt="Cat Energy.">
@@ -75,60 +75,66 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="selection-form__master-contacts master-contacts">
-            <div class="selection-form__wrapper">
+          <div class="selection-form__wrapper">
+            <fieldset class="selection-form__master-contacts master-contacts">
               <legend class="selection-form__title">Контактные данные (владельца кота)</legend>
-            </div>
-            <label class="selection-form__field form-field">
-              <span class="form-field__label">E-mail:*</span>
-              <input class="form-field__control form-control input input--master-contacts" type="text" name="add-name" placeholder="kuklachev@gmail.com" required>
-            </label>
-            <label class="selection-form__field form-field">
-              <span class="form-field__label">Телефон:*</span>
-              <input class="form-field__control form-control input input--master-contacts" type="text" name="add-name" placeholder="8 (960) 900-60-90" required>
-            </label>
-          </fieldset>
-          <fieldset class="selection-form__comments comments">
-            <div class="selection-form__wrapper">
+              <div class="selection-form__container">
+                <label class="selection-form__field form-field">
+                  <span class="form-field__label">E-mail:*</span>
+                  <input class="form-field__control form-control input input--master-contacts" type="text" name="add-name" placeholder="kuklachev@gmail.com" required>
+                </label>
+                <label class="selection-form__field form-field">
+                  <span class="form-field__label">Телефон:*</span>
+                  <input class="form-field__control form-control input input--master-contacts" type="text" name="add-name" placeholder="8 (960) 900-60-90" required>
+                </label>
+              </div>
+            </fieldset>
+          </div>
+          <div class="selection-form__wrapper">
+            <fieldset class="selection-form__comments comments">
               <legend class="selection-form__title">Комментарий</legend>
-            </div>
-            <textarea class="comments__control form-control textarea input" name="comments" cols="25" rows="6" placeholder="Расскажите обо всех повадках кота"></textarea>
-          </fieldset>
-          <fieldset class="selection-form__additions additions">
-            <div class="selection-form__wrapper">
+              <div class="selection-form__container">
+                <textarea class="comments__control form-control textarea input" name="comments" cols="25" rows="6" placeholder="Расскажите обо всех повадках кота"></textarea>
+              </div>
+            </fieldset>
+          </div>
+          <div class="selection-form__wrapper">
+            <fieldset class="selection-form__additions additions">
               <legend class="selection-form__title">Дополнительно</legend>
-            </div>
-            <ul class="additions__list">
-              <li class="additions__item">
-                <label class="additions__check form-check">
-                  <input class="form-check__control visually-hidden" type="checkbox" name="sugar-substitute" checked>
-                  <span class="form-check__mark"></span>
-                  <span class="form-check__text form-control form-control--check">сахарозаменитель</span>
-                </label>
-              </li>
-              <li class="additions__item">
-                <label class="additions__check form-check">
-                  <input class="form-check__control visually-hidden" type="checkbox" name="water">
-                  <span class="form-check__mark"></span>
-                  <span class="form-check__text form-control form-control--check">питьевая вода</span>
-                </label>
-              </li>
-              <li class="additions__item">
-                <label class="additions__check form-check">
-                  <input class="form-check__control visually-hidden" type="checkbox" name="milk">
-                  <span class="form-check__mark"></span>
-                  <span class="form-check__text form-control form-control--check">молоко</span>
-                </label>
-              </li>
-              <li class="additions__item">
-                <label class="additions__check form-check">
-                  <input class="form-check__control visually-hidden" type="checkbox" name="vitamins">
-                  <span class="form-check__mark"></span>
-                  <span class="form-check__text form-control form-control--check">витамины</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
+              <div class="selection-form__container">
+                <ul class="additions__list">
+                  <li class="additions__item">
+                    <label class="additions__check form-check">
+                      <input class="form-check__control visually-hidden" type="checkbox" name="sugar-substitute" checked>
+                      <span class="form-check__mark"></span>
+                      <span class="form-check__text form-control form-control--check">сахарозаменитель</span>
+                    </label>
+                  </li>
+                  <li class="additions__item">
+                    <label class="additions__check form-check">
+                      <input class="form-check__control visually-hidden" type="checkbox" name="water">
+                      <span class="form-check__mark"></span>
+                      <span class="form-check__text form-control form-control--check">питьевая вода</span>
+                    </label>
+                  </li>
+                  <li class="additions__item">
+                    <label class="additions__check form-check">
+                      <input class="form-check__control visually-hidden" type="checkbox" name="milk">
+                      <span class="form-check__mark"></span>
+                      <span class="form-check__text form-control form-control--check">молоко</span>
+                    </label>
+                  </li>
+                  <li class="additions__item">
+                    <label class="additions__check form-check">
+                      <input class="form-check__control visually-hidden" type="checkbox" name="vitamins">
+                      <span class="form-check__mark"></span>
+                      <span class="form-check__text form-control form-control--check">витамины</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </fieldset>
+          </div>
           <button class="selection-form__button button" type="submit">отправить заявку</button>
           <p class="selection-form__note">* — Обязательные поля</p>
         </form>
@@ -149,13 +155,17 @@
         <div class="main-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">Мы в Вконтакте</span>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы на Ютуб</a>
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                <span class="visually-hidden">Мы на Ютуб</span></a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграм</a>
+              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+                <span class="visually-hidden">Мы в Телеграм</span></a>
             </li>
           </ul>
         </div>

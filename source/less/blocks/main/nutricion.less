@@ -1,19 +1,18 @@
 .nutricion {
-  margin: 0 20px 20px 20px;
-  padding: 0;
+  .list-reset;
   outline: 2px solid #8b0000;
 }
 
 .nutricion__wrapper {
-  background-color: #F2F2F2;
+  margin: 0 20px;
 }
 
 .nutricion__title {
-  font-family: "Oswald", sans-serif;
+  .list-reset;
+  .Oswald-normal;
   font-size: 24px;
   line-height: 37px;
-  font-weight: 400;
-  color: #000000;
+  color: @title;
   text-transform: uppercase;
   position: relative;
 }
@@ -36,12 +35,24 @@
   height: 50px;
 }
 
+.nutricion__list {
+  .list-reset;
+}
+
+.nutricion__item {
+  background-color: @nutricion;
+  padding: 30px 20px 22px 20px;
+}
+
+.nutricion__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 .nutricion__link {
-  font-family: "Oswald", sans-serif;
+  .Oswald-normal;
   font-size: 16px;
   line-height: 16px;
-  font-weight: 400;
-  color: #000000;
+  color: @title;
   text-transform: uppercase;
   text-decoration: none;
   position: relative;
@@ -56,10 +67,9 @@
 }
 
 .nutricion__description {
-  font-family: "Lato", sans-serif;
+  .Lato;
   font-size: 14px;
   line-height: 18px;
-  font-weight: 400;
-  color: #444444;
+  color: @subtitle;
   position: relative;
 }
