@@ -5,7 +5,7 @@
 .selection-form__additions {
   .list-reset;
   border: none;
-  outline: 2px solid #8b0000;
+  .outline;
 }
 
 .selection-form__physical-data {
@@ -32,10 +32,11 @@
 
 .form-field,
 .form-control {
-  .Oswald-normal;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  font-weight: @fw-main;
+  font-family: @font-main;
   color: @subtitle;
 
   .form-control--target {
@@ -48,15 +49,14 @@
 }
 
 .selection-form__title {
-  .Oswald-normal;
   font-size: 24px;
   line-height: 26px;
   color: @title;
 }
 
 .selection-form__note {
-  .Lato;
   .list-reset;
+  font-family: @font-subtitle;
   font-size: 14px;
   line-height: 16px;
   color: @title;

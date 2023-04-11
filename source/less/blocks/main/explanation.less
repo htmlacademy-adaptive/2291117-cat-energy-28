@@ -1,6 +1,6 @@
 .explanation {
   .list-reset;
-  outline: 2px solid #8b0000;
+  .outline;
 }
 
 .explanation__wrapper {
@@ -16,7 +16,7 @@
 }
 
 .explanation__item-style {
-  .Lato;
+  font-family: @font-subtitle;
   font-size: 14px;
   line-height: 18px;
   color: @subtitle;
@@ -25,7 +25,7 @@
   &::before {
     content: "";
     position: absolute;
-    background-color: #68b738;
+    background-color: @accent;
     width: 60px;
     height: 60px;
   }
