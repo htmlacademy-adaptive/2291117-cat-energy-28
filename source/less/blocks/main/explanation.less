@@ -1,0 +1,71 @@
+.explanation {
+  .list-reset;
+  .outline;
+}
+
+.explanation__wrapper {
+  margin: 0 20px 49px 20px;
+}
+
+.explanation__list {
+  .list-reset;
+}
+
+.explanation__item:not(:last-child) {
+  margin-bottom: 26px;
+}
+
+.explanation__item-style {
+  font-family: @font-subtitle;
+  font-size: 14px;
+  line-height: 18px;
+  color: @subtitle;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: @accent;
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.explanation__item--healthy::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon_leaf.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.explanation__item--preparation::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-preparation.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.explanation__item--periodicity::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-periodicity.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.explanation__item--result::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-result.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.explanation__title {
+  .Oswald-normal;
+  font-size: 36px;
+  line-height: 40px;
+  color: @title;
+}

@@ -1,0 +1,67 @@
+.selection-form__physical-data,
+.selection-form__target,
+.selection-form__master-contacts,
+.selection-form__comments,
+.selection-form__additions {
+  .list-reset;
+  border: none;
+  .outline;
+}
+
+.selection-form__physical-data {
+  padding-bottom: 24px;
+}
+
+.selection-form__field:not(:last-child) {
+  margin-bottom: 14px;
+  display: block;
+}
+
+.selection-form__target {
+  padding: 22px 0 19px 0;
+}
+
+.selection-form__wrapper {
+  margin: 0 -20px;
+  padding: 0;
+}
+
+.target__list {
+  .list-reset;
+}
+
+.form-field,
+.form-control {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  font-weight: @fw-main;
+  font-family: @font-main;
+  color: @subtitle;
+
+  .form-control--target {
+    color: @radio-text;
+  }
+
+  .form-control--check {
+    color: @title;
+  }
+}
+
+.selection-form__title {
+  font-size: 24px;
+  line-height: 26px;
+  color: @title;
+}
+
+.selection-form__note {
+  .list-reset;
+  font-family: @font-subtitle;
+  font-size: 14px;
+  line-height: 16px;
+  color: @title;
+}
+
+.selection-form__container {
+  margin: 0 20px;
+}
