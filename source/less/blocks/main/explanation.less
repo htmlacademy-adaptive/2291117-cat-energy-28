@@ -5,10 +5,28 @@
 
 .explanation__wrapper {
   margin: 0 20px 49px 20px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 30px 49px 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 110px 49px 110px;
+  }
 }
 
 .explanation__list {
   .list-reset;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 250px 250px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 230px 250px 250px 250px;
+  }
 }
 
 .explanation__item:not(:last-child) {
@@ -64,7 +82,7 @@
 }
 
 .explanation__title {
-  .Oswald-normal;
+  font-family: @font-main;
   font-size: 36px;
   line-height: 40px;
   color: @title;

@@ -2,6 +2,7 @@
 <html class="page-form" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Кэт энерджи. Подбор программы</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -34,7 +35,7 @@
       <h1 class="visually-hidden">Форма подбора программы Cat Energy</h1>
       <section class="form">
         <h2 class="form__title main-title main-title--form-catalog">Подбор программы</h2>
-        <p class="form__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <p class="form__text">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
         <form class="selection-form" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="selection-form__physical-data">
             <label class="selection-form__field form-field">
@@ -135,8 +136,10 @@
               </div>
             </fieldset>
           </div>
-          <button class="selection-form__button button" type="submit">отправить заявку</button>
-          <p class="selection-form__note">* — Обязательные поля</p>
+          <div class="selection-form__button-container">
+            <button class="selection-form__button button" type="submit">отправить заявку</button>
+            <p class="selection-form__note">* — Обязательные поля</p>
+          </div>
         </form>
       </section>
       <section class="cooperation">

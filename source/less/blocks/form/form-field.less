@@ -1,0 +1,31 @@
+.form-field {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  font-weight: @fw-main;
+  font-family: @font-main;
+  color: @subtitle;
+  display: flex;
+}
+
+.form-field__control {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  font-weight: @fw-main;
+  font-family: @font-main;
+  color: @subtitle;
+  flex-grow: 1;
+
+  .form-field__control--target {
+    color: @radio-text;
+  }
+
+  .form-field__control--check {
+    color: @title;
+  }
+}
+
+.form-field__label {
+  margin-right: 13px;
+}

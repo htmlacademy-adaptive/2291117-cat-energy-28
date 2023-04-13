@@ -2,9 +2,18 @@
   background-color: @accent;
   font-size: 14px;
   line-height: 18px;
+  padding: 7px 0;
   font-weight: @fw-main;
   font-family: @font-main;
   color: @base;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+@media (min-width: @tablet-width) {
+  .button {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 14px 0;
+  }
 }

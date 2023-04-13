@@ -1,10 +1,38 @@
 .cooperation {
   .list-reset;
   .outline;
+
+  @media (min-width: @desktop-width) {
+    background-color: @nutricion;
+    position: relative;
+  }
 }
 
 .cooperation__wrapper {
   padding: 26px 20px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    padding: 26px 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 565px;
+    height: 198px;
+    padding: 56px 60px 56px 80px;
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: @base;
+    position: absolute;
+    left: 110px;
+    top: 95px;
+  }
+}
+
+.cooperation__container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .cooperation__title {
@@ -21,4 +49,9 @@
   font-size: 14px;
   line-height: 20px;
   color: @subtitle;
+}
+
+.cooperation__map {
+  display: block;
+  margin: 0 auto;
 }

@@ -2,6 +2,22 @@
   .list-reset;
 }
 
+@media (min-width: @tablet-width) {
+  .main-nav__list {
+    display: flex;
+    justify-content: space-between;
+    width: 440px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__list {
+    display: flex;
+    justify-content: space-between;
+    width: 478px;
+  }
+}
+
 .main-nav__link {
   font-weight: @fw-navigation;
   font-size: 20px;
