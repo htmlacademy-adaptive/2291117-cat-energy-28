@@ -1,3 +1,12 @@
+.selection-form {
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 680px 570px;
+    column-gap: 80px;
+    row-gap: 68px;
+  }
+}
+
 .selection-form__physical-data,
 .selection-form__target,
 .selection-form__master-contacts,
@@ -5,24 +14,126 @@
 .selection-form__additions {
   .list-reset;
   border: none;
-  .outline;
+  border-bottom: 1px solid @nutricion-border;
+
+  @media (min-width: @tablet-width) {
+    border-bottom: none;
+  }
+}
+
+.selection-form__master-contacts,
+.selection-form__comments,
+.selection-form__additions {
+  border-bottom: none;
+
+  @media (min-width: @desktop-width) {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: @accent;
+      top: -90px;
+      left: -30px;
+      z-index: -1;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: @accent;
+      top: -90px;
+      left: 30px;
+      z-index: -1;
+    }
+  }
 }
 
 .selection-form__physical-data {
   padding-bottom: 24px;
+  margin-bottom: 28px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 0;
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+    margin-left: 110px;
+  }
+}
+
+.selection-form__additions {
+  margin-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 59px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+    grid-column: 1/3;
+  }
 }
 
 .selection-form__field:not(:last-child) {
   margin-bottom: 14px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .selection-form__target {
-  padding: 22px 0 19px 0;
+  padding-bottom: 25px;
+  margin-bottom: 26px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 0;
+    margin-bottom: 75px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.selection-form__master-contacts {
+  margin-bottom: 23.5px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+    grid-column: 1/3;
+  }
+}
+
+.selection-form__comments {
+  margin-bottom: 23px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+    grid-column: 1/3;
+  }
 }
 
 .selection-form__wrapper {
   margin: 0 -20px;
-  padding: 0;
+  padding-top: 26px;
 
   @media (min-width: @tablet-width) {
     margin: 0 -70px;
@@ -32,7 +143,48 @@
 .selection-form__title {
   font-size: 24px;
   line-height: 26px;
+  margin-bottom: 35px;
+  padding: 0 20px;
   color: @title;
+  background-color: @base;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 2px;
+    background-color: @accent;
+    top: 15px;
+    z-index: -1;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 0 40px;
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 76px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 300%;
+      height: 2px;
+      background-color: @accent;
+      top: 22px;
+      left: -40px;
+      z-index: -1;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 0 40px 0 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 40px 0 40px;
+    margin-left: 70px;
+  }
 }
 
 .selection-form__note {
@@ -41,6 +193,12 @@
   font-size: 14px;
   line-height: 16px;
   color: @title;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
 }
 
 .selection-form__container {
@@ -52,13 +210,31 @@
 }
 
 .selection-form__button-container {
+  margin: 0 20px;
   display: flex;
   flex-direction: column;
 
   @media (min-width: @tablet-width) {
+    margin: 0 40px;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     width: 533px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 110px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 826px;
   }
 }
 
+.selection-form__button {
+  margin-bottom: 21px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
+}

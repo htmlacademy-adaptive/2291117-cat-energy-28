@@ -1,17 +1,45 @@
 .explanation {
   .list-reset;
-  .outline;
-}
-
-.explanation__wrapper {
-  margin: 0 20px 49px 20px;
+  margin-bottom: 53px;
 
   @media (min-width: @tablet-width) {
-    margin: 0 30px 49px 30px;
+    padding: 0 0 47px 0;
+    margin-bottom: 43px;
+    border-bottom: 1px solid @nav-border;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 110px 49px 110px;
+    padding: 45px 0 0 0;
+    margin-bottom: 69px;
+    border: none;
+  }
+}
+
+.explanation__wrapper {
+  margin: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 110px;
+  }
+}
+
+.explanation__title {
+  .list-reset;
+  font-weight: @fw-main;
+  font-family: @font-main;
+  font-size: 36px;
+  line-height: 40px;
+  color: @title;
+  margin-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 32px;
+    font-size: 60px;
+    line-height: 60px;
   }
 }
 
@@ -21,23 +49,35 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 250px 250px;
+    gap: 37px 153px;
   }
 
   @media (min-width: @desktop-width) {
     display: grid;
-    grid-template-columns: 230px 250px 250px 250px;
+    grid-template-columns: 230px 246px 248px 250px;
+    gap: 81px;
   }
 }
 
-.explanation__item:not(:last-child) {
-  margin-bottom: 26px;
+.explanation__item {
+  margin-left: 80.5px;
+
+  &:not(:last-child) {
+    margin-bottom: 26px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 57px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-left: 0;
+    margin-top: 151px;
+    margin-bottom: 57px;
+  }
 }
 
 .explanation__item-style {
-  font-family: @font-subtitle;
-  font-size: 14px;
-  line-height: 18px;
-  color: @subtitle;
   position: relative;
 
   &::before {
@@ -46,6 +86,15 @@
     background-color: @accent;
     width: 60px;
     height: 60px;
+    left: -80px;
+    top: -3px;
+
+    @media (min-width: @tablet-width) {
+      width: 80px;
+      height: 80px;
+      left: 0;
+      top: -111px;
+    }
   }
 }
 
@@ -81,9 +130,32 @@
   background-position: center;
 }
 
-.explanation__title {
-  font-family: @font-main;
-  font-size: 36px;
-  line-height: 40px;
-  color: @title;
+.explanation__text {
+  .list-reset;
+  font-family: @font-subtitle;
+  font-size: 14px;
+  line-height: 18px;
+  color: @subtitle;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    z-index: 1;
+  }
 }
+
+.explanation__number {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    font-size: 280px;
+    line-height: 280px;
+    color: @nutricion;
+    position: absolute;
+    bottom: -57px;
+    right: 0;
+    z-index: -1;
+  }
+}
+

@@ -1,0 +1,33 @@
+.form-check {
+  display: flex;
+  align-items: center;
+}
+
+.form-check__mark {
+  width: 30px;
+  height: 30px;
+  border: 1px solid @input-border;
+  display: inline-block;
+  margin-right: 16px;
+  position: relative;
+}
+
+.form-check__control[type="checkbox"]:checked + .form-check__mark::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../../img/form-check.png");
+  width: 18px;
+  height: 14px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.form-check__text {
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

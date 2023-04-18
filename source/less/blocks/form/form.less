@@ -1,9 +1,39 @@
 .form {
   .list-reset;
-  padding: 27px 20px 32px 20px;
+  padding: 27px 0 32px 0;
 
   @media (min-width: @tablet-width) {
-    padding: 27px 70px 32px 70px;
+    padding: 27px 30px 72px 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 0 82px 0;
+  }
+}
+
+.form__header {
+  margin: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 0 0 110px;
+  }
+}
+
+.form__wrapper {
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 78px;
+  }
+}
+
+.form__container {
+  @media (min-width: @desktop-width) {
+    margin: 0;
   }
 }
 
@@ -12,6 +42,16 @@
   margin-bottom: 37px;
   font-weight: @fw-main;
   font-family: @font-main;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 56px;
+  }
 }
 
 .form__text {
@@ -21,4 +61,10 @@
   margin-bottom: 39px;
   color: @title;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 66px;
+  }
 }
