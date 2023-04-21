@@ -8,28 +8,30 @@
   </head>
   <body class="page-catalog__body">
     <header class="main-header">
-      <a class="main-header__logo logo">
-        <img class="main-header__logo-image" src="img/logo-mobile.svg" width="33.32" height="37.61" alt="Cat Energy.">
-        <img class="main-header__logo-title-image" src="img/logo-title-mobile.svg" width="101" height="18" alt="">
-      </a>
-      <nav class="main-nav main-nav--closed">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="index.html">главная</a>
-            </li>
-            <li class="main-nav__item main-nav__item--current">
-              <a class="main-nav__link">каталог продукции</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">подбор программы</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <div class="main-header__container">
+        <a class="main-header__logo logo">
+          <img class="main-header__logo-image" src="img/logo-mobile.svg" width="33.32" height="37.61" alt="Cat Energy.">
+          <img class="main-header__logo-title-image" src="img/logo-title-mobile.svg" width="101" height="18" alt="">
+        </a>
+        <nav class="main-nav main-nav--closed">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="index.html">главная</a>
+              </li>
+              <li class="main-nav__item main-nav__item--current">
+                <a class="main-nav__link">каталог продукции</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="form.html">подбор программы</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
     <main class="catalog-container">
       <h1 class="catalog-container__title main-title main-title--form-catalog">Каталог продукции</h1>
@@ -195,7 +197,9 @@
         </div>
       </section>
       <section class="additional">
-        <h2 class="additional__title">Дополнительные товары</h2>
+        <div class="additional__title-container">
+          <h2 class="additional__title">Дополнительные товары</h2>
+        </div>
         <div class="additional__wrapper">
           <div class="additional__container">
             <ul class="additional__list">
@@ -241,12 +245,13 @@
             </div>
           </div>
         </div>
-
       </section>
       <section class="cooperation">
         <div class="cooperation__wrapper">
-          <h2 class="cooperation__title">приглашаем<br> к сотрудничеству<br> дилеров!</h2>
-          <p class="cooperation__contacts-text">ул. Большая<br> Конюшенная, д. 19/8<br> Санкт-Петербург</p>
+          <div class="cooperation__container">
+            <h2 class="cooperation__title">приглашаем<br> к сотрудничеству<br> дилеров!</h2>
+            <p class="cooperation__contacts-text">ул. Большая<br> Конюшенная, д. 19/8<br> Санкт-Петербург</p>
+          </div>
         </div>
         <div class="cooperation__map-container">
           <iframe class="cooperation__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1286.6148600369488!2d30.323371771237326!3d59.93862311261213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2skz!4v1681653086086!5m2!1sru!2skz" width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

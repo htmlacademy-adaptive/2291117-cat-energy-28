@@ -1,29 +1,30 @@
 .explanation {
   .list-reset;
-  margin-bottom: 53px;
 
   @media (min-width: @tablet-width) {
-    padding: 0 0 47px 0;
     margin-bottom: 43px;
     border-bottom: 1px solid @nav-border;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 45px 0 0 0;
-    margin-bottom: 69px;
     border: none;
+    margin: 0;
   }
 }
 
 .explanation__wrapper {
-  margin: 0 20px;
+  margin: 0 auto;
+  max-width: 280px;
+  padding-bottom: 53px;
 
   @media (min-width: @tablet-width) {
-    margin: 0 30px;
+    max-width: 709px;
+    padding-bottom: 47px;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 110px;
+    max-width: 1220px;
+    padding-bottom: 69px;
   }
 }
 

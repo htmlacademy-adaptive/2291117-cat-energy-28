@@ -1,25 +1,19 @@
 .nutricion {
   .list-reset;
-  margin-bottom: 20px;
-
-  @media (min-width: @tablet-width) {
-    margin-bottom: 45px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-bottom: 71px;
-  }
 }
 
 .nutricion__wrapper {
-  margin: 0 20px;
+  margin: 0 auto;
+  max-width: 280px;
 
   @media (min-width: @tablet-width) {
-    margin: 0 30px;
+    max-width: 709px;
+    padding-bottom: 15px;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 110px;
+    max-width: 1220px;
+    padding-bottom: 71px;
   }
 }
 
@@ -36,25 +30,16 @@
 .nutricion__item {
   background-color: @nutricion;
   padding: 30px 20px 22px 20px;
+  margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
     padding: 77px 62px 53px 53px;
+    margin-bottom: 30px;
   }
 
   @media (min-width: @desktop-width) {
     flex-grow: 1;
     padding: 77px 61px 59px 52px;
-  }
-}
-
-.nutricion__item:not(:last-child) {
-  margin-bottom: 20px;
-
-  @media (min-width: @tablet-width) {
-    margin-bottom: 30px;
-  }
-
-  @media (min-width: @desktop-width) {
     margin-bottom: 0;
   }
 }

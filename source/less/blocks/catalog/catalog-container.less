@@ -1,6 +1,7 @@
 .catalog-container {
   .list-reset;
   padding: 27px 0 0 0;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
     padding: 0;
@@ -10,18 +11,25 @@
 
 .catalog-container__title {
   .list-reset;
-  padding: 0 20px 41px 20px;
+  padding: 0 0 41px 0;
+  margin: 0 auto;
+  max-width: 320px;
+  text-align: center;
   font-weight: @fw-main;
   font-family: @font-main;
   border-bottom: 1px solid @catalog-border;
 
   @media (min-width: @tablet-width) {
     padding: 0;
-    margin: 0 30px 82px 30px;
+    margin-bottom: 82px;
     border-bottom: 0;
+    max-width: 709px;
+    text-align: left;
   }
 
-  @media (min-width: @tablet-width) {
-    margin: 0 110px 165px 110px;
+  @media (min-width: @desktop-width) {
+    margin-bottom: 165px;
+    max-width: 1220px;
+    text-align: left;
   }
 }

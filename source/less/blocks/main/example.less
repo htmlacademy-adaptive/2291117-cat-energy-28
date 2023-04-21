@@ -1,29 +1,33 @@
 .example {
   .list-reset;
-  padding: 25px 20px 40px 20px;
   background-color: @example;
   position: relative;
 
   @media (min-width: @tablet-width) {
-    padding: 0 30px 101px 30px;
     background: linear-gradient(180deg, @base 0, @base 619px, @example 619px, @example 100%);
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 110px 75px 110px;
     background: linear-gradient(180deg, @base 0, @base 136px, @example 136px, @example 100%);
   }
 }
 
 .example__wrapper {
-  display: grid;
+  margin: 0 auto;
+  padding: 25px 0 40px 0;
+  max-width: 280px;
 
   @media (min-width: @tablet-width) {
+    max-width: 709px;
+    padding: 0 0 100px 0;
+    display: grid;
     grid-template-columns: 370px 1fr;
     grid-template-rows: 123px 126px 176px 512px;
   }
 
   @media (min-width: @desktop-width) {
+    max-width: 1220px;
+    padding: 0 0 75px 0;
     grid-template-columns: 433px 560px;
     grid-template-rows: 136px 180px 117px 20px;
   }

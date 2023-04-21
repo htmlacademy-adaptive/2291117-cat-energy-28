@@ -3,7 +3,7 @@
   padding: 27px 0 32px 0;
 
   @media (min-width: @tablet-width) {
-    padding: 27px 30px 72px 30px;
+    padding: 27px 0 72px 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -12,14 +12,18 @@
 }
 
 .form__header {
-  margin: 0 20px;
+  margin: 0 auto;
+  max-width: 280px;
+  padding-bottom: 24px;
 
   @media (min-width: @tablet-width) {
-    margin: 0 40px;
+    max-width: 628px;
+    padding-bottom: 66px;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 0 0 110px;
+    max-width: 1220px;
+    margin: 0 auto;
   }
 }
 
@@ -58,13 +62,11 @@
   .list-reset;
   font-size: 14px;
   line-height: 18px;
-  margin-bottom: 39px;
   color: @title;
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    margin-bottom: 66px;
   }
 }
