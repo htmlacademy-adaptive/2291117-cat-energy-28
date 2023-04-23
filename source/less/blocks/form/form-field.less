@@ -6,9 +6,16 @@
   font-family: @font-main;
   color: @subtitle;
   display: flex;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form-field__control {
+  .list-reset;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -16,6 +23,9 @@
   font-family: @font-main;
   color: @subtitle;
   flex-grow: 1;
+  border: 1px solid @input-border;
+  box-sizing: border-box;
+  padding: 14px 15px;
 
   .form-field__control--target {
     color: @radio-text;
@@ -24,6 +34,26 @@
   .form-field__control--check {
     color: @title;
   }
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 11px 20px;
+  }
+}
+
+.form-field__control--email {
+  background-image: url("../../../img/form-email.svg");
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: 17px 13px;
+}
+
+.form-field__control--telephone {
+  background-image: url("../../../img/form-telephone.svg");
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: 15px 15px;
 }
 
 .form-field__label {

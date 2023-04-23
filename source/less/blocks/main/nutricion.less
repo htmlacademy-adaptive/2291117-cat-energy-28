@@ -1,45 +1,20 @@
 .nutricion {
   .list-reset;
-  .outline;
 }
 
 .nutricion__wrapper {
-  margin: 0 20px;
+  margin: 0 auto;
+  max-width: 280px;
 
   @media (min-width: @tablet-width) {
-    margin: 0 30px;
+    max-width: 709px;
+    padding-bottom: 15px;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 110px;
+    max-width: 1220px;
+    padding-bottom: 71px;
   }
-}
-
-.nutricion__title {
-  .list-reset;
-  font-size: 24px;
-  line-height: 37px;
-  color: @title;
-  text-transform: uppercase;
-  position: relative;
-}
-
-.nutricion__title--slim::before {
-  content: "";
-  position: absolute;
-  background-image: url("../img/nutricion__title--slim.png");
-  background-repeat: no-repeat;
-  width: 50px;
-  height: 53px;
-}
-
-.nutricion__title--pro::before {
-  content: "";
-  position: absolute;
-  background-image: url("../img/nutricion__title--pro.png");
-  background-repeat: no-repeat;
-  width: 67px;
-  height: 50px;
 }
 
 .nutricion__list {
@@ -55,15 +30,141 @@
 .nutricion__item {
   background-color: @nutricion;
   padding: 30px 20px 22px 20px;
-}
-
-.nutricion__item:not(:last-child) {
   margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
+    padding: 77px 62px 53px 53px;
     margin-bottom: 30px;
   }
+
+  @media (min-width: @desktop-width) {
+    flex-grow: 1;
+    padding: 77px 61px 59px 52px;
+    margin-bottom: 0;
+  }
 }
+
+.nutricion__title {
+  .list-reset;
+  font-size: 24px;
+  line-height: 37px;
+  padding-left: 71px;
+  margin-bottom: 29px;
+  color: @title;
+  font-weight: @fw-main;
+  text-transform: uppercase;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 24px;
+    padding-left: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 73px;
+    padding-left: 162px;
+  }
+}
+
+.nutricion__title--slim::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/nutricion__title--slim.svg");
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 53px;
+  left: 0;
+  top: -9px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    top: -35px;
+  }
+}
+
+.nutricion__title--pro::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/nutricion__title--pro.svg");
+  background-repeat: no-repeat;
+  width: 67px;
+  height: 50px;
+  left: -7px;
+  top: -6px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    top: -32px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .nutricion__title--slim::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/nutricion__title--slim.svg");
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 53px;
+    right: 0;
+    top: -9px;
+
+    @media (min-width: @desktop-width) {
+      display: none;
+    }
+  }
+
+  .nutricion__title--pro::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/nutricion__title--pro.svg");
+    background-repeat: no-repeat;
+    width: 67px;
+    height: 50px;
+    right: 0;
+    top: -6px;
+
+    @media (min-width: @desktop-width) {
+      display: none;
+    }
+  }
+}
+
+.nutricion__description {
+  .list-reset;
+  font-family: @font-subtitle;
+  font-size: 14px;
+  line-height: 18px;
+  color: @subtitle;
+  position: relative;
+  padding-bottom: 23px;
+  margin-bottom: 19px;
+  border-bottom: 1px solid @nutricion-border;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 0;
+    margin-bottom: 52px;
+    border-bottom: none;
+    max-width: 340px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 27px;
+  }
+}
+
 
 .nutricion__link {
   font-size: 16px;
@@ -73,6 +174,11 @@
   text-decoration: none;
   position: relative;
 
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -80,13 +186,12 @@
     width: 24px;
     height: 12px;
     background-repeat: no-repeat;
-  }
-}
+    right: -39px;
+    top: 6px;
 
-.nutricion__description {
-  font-family: @font-subtitle;
-  font-size: 14px;
-  line-height: 18px;
-  color: @subtitle;
-  position: relative;
+    @media (min-width: @tablet-width) {
+      right: -49px;
+      top: 10px;
+    }
+  }
 }

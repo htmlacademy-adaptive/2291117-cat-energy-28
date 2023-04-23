@@ -2,18 +2,59 @@
   background-color: @accent;
   font-size: 14px;
   line-height: 18px;
-  padding: 7px 0;
+  padding: 11px 0;
   font-weight: @fw-main;
   font-family: @font-main;
   color: @base;
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
+  border: none;
+
+  &--show-more {
+    background-color: @nutricion;
+    color: @subtitle;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .button {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 20px;
+    padding: 14px 65px;
+    border: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .button {
     padding: 14px 0;
+    border: none;
+  }
+}
+
+.button--promotion {
+  @media (min-width: @tablet-width) {
+    max-width: 350px;
+    border: none;
+    padding: 17px 46px;
+    margin-left: 91px;
+  }
+}
+
+.button--submit {
+  @media (min-width: @tablet-width) {
+    padding: 16px 80px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 16px 223px;
+    display: block;
+  }
+}
+
+.button--additional {
+  @media (min-width: @tablet-width) {
+    padding: 10px 65px;
   }
 }

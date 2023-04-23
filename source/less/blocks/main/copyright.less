@@ -1,7 +1,32 @@
+.copyright {
+  margin-top: 20px;
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+    width: 168px;
+  }
+}
+
 .copyright__link {
   font-family: @font-subtitle;
   font-size: 16px;
   line-height: 19px;
   color: @subtitle;
   text-decoration: none;
+  position: relative;
+  display: block;
+  padding: 7.5px 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../../../img/htmlacademy.svg");
+    background-repeat: no-repeat;
+    width: 27px;
+    height: 34px;
+    right: 0;
+    top: 0;
+    color: @subtitle;
+  }
 }

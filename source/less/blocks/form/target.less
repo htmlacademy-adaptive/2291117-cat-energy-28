@@ -1,3 +1,16 @@
 .target__list {
   .list-reset;
+
+  @media (min-width: @tablet-width) {
+    padding: 25px 28px;
+    border: 1px solid @nutricion-border;
+  }
+}
+
+.target__item:not(:last-child) {
+  margin-bottom: 13px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 23px;
+  }
 }

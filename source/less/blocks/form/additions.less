@@ -5,6 +5,25 @@
     display: grid;
     width: 533px;
     grid-template-columns: 230px 230px;
-    column-gap: 123px;
+    column-gap: 148px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    width: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 120px;
+  }
+}
+
+.additions__item:not(:last-child) {
+  margin-bottom: 13px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 42px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
   }
 }
