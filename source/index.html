@@ -5,13 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page-main__body">
     <header class="main-header">
       <div class="main-header__container">
         <a class="main-header__logo logo">
-          <img class="main-header__logo-image" src="img/logo-mobile.svg" width="33.32" height="37.61" alt="Cat Energy.">
-          <img class="main-header__logo-title-image" src="img/logo-title-mobile.svg" width="101" height="18" alt="">
+          <picture>
+            <source media="(min-width: 1220px)" srcset="img/logo-desktop.svg" width="202" height="59">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="174" height="51.68">
+            <img class="main-header__logo-image" src="img/logo-mobile.svg" width="191" height="37.61" alt="Cat Energy.">
+          </picture>
         </a>
         <nav class="main-nav main-nav--opened main-nav--nojs">
 
@@ -19,9 +26,11 @@
           <!--main-nav--opened  меню навигации открыто-->
           <!--main-nav--nojs  меню навигации при неработающем JS-->
 
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
+          <div class="main-nav__toggle-container">
+            <button class="main-nav__toggle" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+          </div>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
               <li class="main-nav__item main-nav__item--current">
@@ -47,7 +56,11 @@
             <p class="promotion__title">Функциональное питание для котов</p>
             <p class="promotion__intro">Занялся собой? Займись котом!</p>
           </header>
-          <img class="promotion__image" width="280" height="270" src="img/promo-chicken-pro.png" alt="Корм Cat Energy Pro.">
+          <picture>
+            <source media="(min-width: 1220px)" srcset="img/promo-chicken-pro-desktop.png" width="552" height="499">
+            <source media="(min-width: 768px)" srcset="img/promo-chicken-pro-tablet.png" width="709" height="609">
+            <img class="promotion__image" width="280" height="270" src="img/promo-chicken-pro-mobile.png" alt="Корм Cat Energy Pro.">
+          </picture>
           <a class="promotion__link button button--promotion" href="form.html">подобрать программу</a>
         </div>
       </section>
@@ -116,14 +129,20 @@
             <span class="example__cost">15 000 РУБ.</span>
           </div>
           <div class="example__image-container">
-            <img class="example__image-slim" src="img/cat-before__mobile.png" width="140" height="256" alt="Кот до похудения.">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/cat-before-tablet.png 1x, img/cat-before-tablet@2x.png 2x" width="280" height="512">
+              <img class="example__image-slim" src="img/cat-before-mobile.png" width="140" height="256" srcset="img/cat-before-mobile@2x.png 2x" alt="Кот до похудения.">
+            </picture>
             <div class="example__slider-container">
               <button class="example__button" type="button">
                 <span class="visually-hidden">Сдвинуть ползунок</span>
               </button>
               <span class="example__slider-control"></span>
             </div>
-            <img class="example__image-fat" src="img/cat-after__mobile.png" width="140" height="256" alt="Похудевший кот.">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/cat-after-tablet.png 1x, /img/cat-after-tablet@2x.png 2x" width="280" height="512">
+              <img class="example__image-fat" src="img/cat-after-mobile.png" width="140" height="256" srcset="img/cat-after-mobile@2x.png 2x" alt="Похудевший кот.">
+            </picture>
           </div>
         </div>
       </section>
@@ -142,7 +161,10 @@
     <footer class="main-footer">
       <div class="main-footer__wrapper">
         <a class="main-footer__logo logo" href="index.html">
-          <img class="main-footer__logo-image" src="img/footer-logo_mobile.svg" width="128" height="24" alt="Логотип Cat Energy.">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/footer-logo-tablet.svg" width="143" height="26">
+            <img class="main-footer__logo-image" src="img/footer-logo-mobile.svg" width="128" height="24" alt="Логотип Cat Energy.">
+          </picture>
         </a>
         <div class="main-footer__social social">
           <ul class="social__list">

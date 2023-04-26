@@ -1,12 +1,16 @@
 .promotion {
   .list-reset;
-  background-image: linear-gradient(@accent-background, @accent-background), url("../img/cat-promotion-background.jpg");
+  background-image: linear-gradient(@accent-background, @accent-background), url("../img/cat-promotion-background-mobile.jpg");
   background-repeat: no-repeat;
   background-size: 320px 302px;
   background-position: center top;
   padding-top: 27px;
   position: relative;
   margin: 0 auto;
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(@accent-background, @accent-background), url("../img/cat-promotion-background-mobile@2x.jpg");
+  }
 
   @media (min-width: @tablet-width) {
     background: none;
@@ -24,13 +28,21 @@
   @media (min-width: @desktop-width) {
     content: "";
     position: absolute;
-    background-image: linear-gradient(@accent-background, @accent-background), url("../img/cat-promotion-background.jpg");
+    background-image: linear-gradient(@accent-background, @accent-background), url("../img/cat-promotion-background-desktop.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
     width: 50%;
     height: 694px;
     bottom: 0;
     right: 0;
     z-index: -1;
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(@accent-background, @accent-background), url("../img/cat-promotion-background-desktop@2x.jpg");
+      width: 50%;
+      height: 694px;
+      background-size: cover;
+    }
   }
 }
 
@@ -43,12 +55,13 @@
   @media (min-width: @tablet-width) {
     margin: 0 auto;
     max-width: 709px;
-    padding-bottom: 185px;
+    padding-bottom: 526px;
   }
 
   @media (min-width: @desktop-width) {
     margin: 0 auto;
     max-width: 1220px;
+    padding-bottom: 182px;
   }
 }
 
