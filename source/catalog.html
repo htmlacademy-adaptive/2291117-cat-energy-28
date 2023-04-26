@@ -5,13 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Кэт энерджи. Каталог продукции</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page-catalog__body">
     <header class="main-header">
       <div class="main-header__container">
-        <a class="main-header__logo logo" href="index.html">
-          <img class="main-header__logo-image" src="img/logo-mobile.svg" width="33.32" height="37.61" alt="Cat Energy.">
-          <img class="main-header__logo-title-image" src="img/logo-title-mobile.svg" width="101" height="18" alt="">
+        <a class="main-header__logo logo">
+          <picture>
+            <source media="(min-width: 1220px)" srcset="img/logo-desktop.svg" width="202" height="59">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="174" height="51.68">
+            <img class="main-header__logo-image" src="img/logo-mobile.svg" width="191" height="37.61" alt="Cat Energy.">
+          </picture>
         </a>
         <nav class="main-nav main-nav--opened main-nav--nojs">
 
@@ -19,9 +26,11 @@
           <!--main-nav--opened  меню навигации открыто-->
           <!--main-nav--nojs  меню навигации при неработающем JS-->
 
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
+          <div class="main-nav__toggle-container">
+            <button class="main-nav__toggle" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+          </div>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
               <li class="main-nav__item">
@@ -39,14 +48,21 @@
       </div>
     </header>
     <main class="catalog-container">
-      <h1 class="catalog-container__title main-title main-title--form-catalog">Каталог продукции</h1>
+      <div class="catalog-container__title-wrapper">
+        <h1 class="catalog-container__title main-title main-title--form-catalog">Каталог продукции</h1>
+      </div>
       <section class="basic">
         <div class="basic__wrapper">
           <h2 class="visually-hidden">Основные товары</h2>
           <ul class="basic__list">
             <li class="basic__item">
               <a class="basic__link" href="#">
-                <img class="basic__photo-image" src="img/cat-energy-pro-500g-chicken.png" width="68" height="86" alt="Питание Cat Energy Pro 500 грамм с курицей.">
+                <div class="basic__container">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="img/cat-energy-pro-500g-chicken-tablet.png 1x, img/cat-energy-pro-500g-chicken-tablet@2x.png 2x" width="161" height="172">
+                    <img class="basic__photo-image" src="img/cat-energy-pro-500g-chicken-mobile.png" width="68" height="86" srcset="img/cat-energy-pro-500g-chicken-mobile@2x.png 2x" alt="Питание Cat Energy Pro 500 грамм с курицей.">
+                  </picture>
+                </div>
                 <h3 class="basic__title">Cat Energy PRO 500 г</h3>
                 <dl class="basic__characteristics">
                   <div class="basic__text">
@@ -67,7 +83,12 @@
             </li>
             <li class="basic__item">
               <a class="basic__link" href="#">
-                <img class="basic__photo-image" src="img/cat-energy-pro-1000g-chicken.png" width="84" height="100" alt="Питание Cat Energy Pro 1000 грамм с курицей.">
+                <div class="basic__container">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="img/cat-energy-pro-1000g-chicken-tablet.png 1x, img/cat-energy-pro-1000g-chicken-tablet@2x.png 2x" width="168" height="206">
+                    <img class="basic__photo-image" src="img/cat-energy-pro-1000g-chicken-mobile.png" width="84" height="100" srcset="img/cat-energy-pro-1000g-chicken-mobile@2x.png 2x" alt="Питание Cat Energy Pro 1000 грамм с курицей.">
+                  </picture>
+                </div>
                 <h3 class="basic__title">Cat Energy PRO 1000 г</h3>
                 <dl class="basic__characteristics">
                   <div class="basic__text">
@@ -88,7 +109,12 @@
             </li>
             <li class="basic__item">
               <a class="basic__link" href="#">
-                <img class="basic__photo-image" src="img/cat-energy-pro-500g-fish.png" width="68" height="78" alt="Питание Cat Energy Pro 500 грамм с рыбой.">
+                <div class="basic__container">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="img/cat-energy-pro-500g-fish-tablet.png 1x, img/cat-energy-pro-500g-fish-tablet@2x.png 2x" width="163" height="174">
+                    <img class="basic__photo-image" src="img/cat-energy-pro-500g-fish-mobile.png" width="68" height="78" srcset="img/cat-energy-pro-500g-fish-mobile@2x.png 2x" alt="Питание Cat Energy Pro 500 грамм с рыбой.">
+                  </picture>
+                </div>
                 <h3 class="basic__title">Cat Energy PRO 500 г</h3>
                 <dl class="basic__characteristics">
                   <div class="basic__text">
@@ -109,7 +135,12 @@
             </li>
             <li class="basic__item">
               <a class="basic__link" href="#">
-                <img class="basic__photo-image" src="img/cat-energy-pro-1000g-fish.png" width="84" height="100" alt="Питание Cat Energy Pro 1000 грамм с рыбой.">
+                <div class="basic__container">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="img/cat-energy-pro-1000g-fish-tablet.png 1x, img/cat-energy-pro-1000g-fish-tablet@2x.png 2x" width="168" height="200">
+                    <img class="basic__photo-image" src="img/cat-energy-pro-1000g-fish-mobile.png" srcset="img/cat-energy-pro-1000g-fish-mobile@2x.png 2x" width="84" height="100" alt="Питание Cat Energy Pro 1000 грамм с рыбой.">
+                  </picture>
+                </div>
                 <h3 class="basic__title">Cat Energy PRO 500 г</h3>
                 <dl class="basic__characteristics">
                   <div class="basic__text">
@@ -130,7 +161,12 @@
             </li>
             <li class="basic__item">
               <a class="basic__link" href="#">
-                <img class="basic__photo-image" src="img/cat-energy-pro-500g-buckwheat.png" width="68" height="78" alt="Питание Cat Energy Pro 500 грамм с гречкой.">
+                <div class="basic__container">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="img/cat-energy-pro-500g-buckwheat-tablet.png 1x, img/cat-energy-pro-500g-buckwheat-tablet@2x.png 2x" width="161" height="171">
+                    <img class="basic__photo-image" src="img/cat-energy-pro-500g-buckwheat-mobile.png" srcset="img/cat-energy-pro-500g-buckwheat-mobile@2x.png 2x" width="68" height="78" alt="Питание Cat Energy Pro 500 грамм с гречкой.">
+                  </picture>
+                </div>
                 <h3 class="basic__title">Cat Energy PRO 500 г</h3>
                 <dl class="basic__characteristics">
                   <div class="basic__text">
@@ -151,7 +187,12 @@
             </li>
             <li class="basic__item">
               <a class="basic__link" href="#">
-                <img class="basic__photo-image" src="img/cat-energy-pro-1000g-buckwheat.png" width="84" height="100" alt="Питание Cat Energy Pro 1000 грамм с гречкой.">
+                <div class="basic__container">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="img/cat-energy-pro-1000g-buckwheat-tablet.png 1x, img/cat-energy-pro-1000g-buckwheat-tablet@2x.png 2x" width="168" height="200">
+                    <img class="basic__photo-image" src="img/cat-energy-pro-1000g-buckwheat-mobile.png" srcset="img/cat-energy-pro-1000g-buckwheat-mobile@2x.png 2x" width="84" height="100" alt="Питание Cat Energy Pro 1000 грамм с гречкой.">
+                  </picture>
+                </div>
                 <h3 class="basic__title">Cat Energy PRO 500 г</h3>
                 <dl class="basic__characteristics">
                   <div class="basic__text">
@@ -172,7 +213,12 @@
             </li>
             <li class="basic__item">
               <a class="basic__link" href="#">
-                <img class="basic__photo-image" src="img/cat-energy-pro-500g-rice.png" width="72" height="84" alt="Питание Cat Energy Pro 500 грамм с рисом.">
+                <div class="basic__container">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="img/cat-energy-pro-500g-rice-tablet.png 1x, img/cat-energy-pro-500g-rice-tablet@2x.png 2x" width="163" height="174">
+                    <img class="basic__photo-image" src="img/cat-energy-pro-500g-rice-mobile.png" srcset="img/cat-energy-pro-500g-rice-mobile@2x.png 2x" width="72" height="84" alt="Питание Cat Energy Pro 500 грамм с рисом.">
+                  </picture>
+                </div>
                 <h3 class="basic__title">Cat Energy PRO 500 г</h3>
                 <dl class="basic__characteristics">
                   <div class="basic__text">
@@ -203,7 +249,9 @@
       </section>
       <section class="additional">
         <div class="additional__title-container">
-          <h2 class="additional__title">Дополнительные товары</h2>
+          <div class="additional__title-inner">
+            <h2 class="additional__title">Дополнительные товары</h2>
+          </div>
         </div>
         <div class="additional__wrapper">
           <div class="additional__container">
@@ -245,7 +293,11 @@
           <div class="additional__gift">
             <h2 class="additional__gift-title">Закажите все и получите чехол для кота в подарок!</h2>
             <div class="additional__gift-image-wrapper">
-              <img class="additional__gift-image" src="img/image-gift.jpg" width="280" height="290" alt="Кот в чехле.">
+              <picture>
+                <source media="(min-width: 1220px)" srcset="img/image-gift-desktop.jpg 1x, img/image-gift-desktop@2x.jpg 2x" width="245" height="289">
+                <source media="(min-width: 768px)" srcset="img/image-gift-tablet.jpg 1x, img/image-gift-tablet@2x.jpg 2x" width="707" height="200">
+                <img class="additional__gift-image" src="img/image-gift-mobile.jpg" srcset="img/image-gift-mobile@2x.jpg 2x" width="280" height="290" alt="Кот в чехле.">
+              </picture>
               <div class="additional__gift-image-filter"></div>
             </div>
           </div>
@@ -266,7 +318,10 @@
     <footer class="main-footer">
       <div class="main-footer__wrapper">
         <a class="main-footer__logo logo" href="index.html">
-          <img class="main-footer__logo-image" src="img/footer-logo_mobile.svg" width="128" height="24" alt="Логотип Cat Energy.">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/footer-logo-tablet.svg" width="143" height="26">
+            <img class="main-footer__logo-image" src="img/footer-logo-mobile.svg" width="128" height="24" alt="Логотип Cat Energy.">
+          </picture>
         </a>
         <div class="main-footer__social social">
           <ul class="social__list">

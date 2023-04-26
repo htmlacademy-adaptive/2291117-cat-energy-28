@@ -38,7 +38,7 @@
   background-color: transparent;
   width: 20px;
   height: 20px;
-  right: 20px;
+  right: 0;
   text-align: right;
   align-self: flex-end;
   margin-bottom: 25px;
@@ -93,6 +93,14 @@
   color: @title;
   text-decoration: none;
   text-transform: uppercase;
+  display: block;
+  max-width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    display: inline;
+    margin: 0;
+  }
 }
 
 .main-nav--opened {
@@ -102,6 +110,13 @@
 .main-nav--opened .main-nav--wrapper {
   content: "";
   position: absolute;
+}
+
+.main-nav__toggle-container {
+  width: 280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
 }
 
 @media (min-width: @tablet-width) {

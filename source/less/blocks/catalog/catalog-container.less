@@ -9,6 +9,14 @@
   }
 }
 
+.catalog-container__title-wrapper {
+  border-bottom: 1px solid @catalog-border;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+  }
+}
+
 .catalog-container__title {
   .list-reset;
   padding: 0 0 41px 0;
@@ -17,7 +25,6 @@
   text-align: center;
   font-weight: @fw-main;
   font-family: @font-main;
-  border-bottom: 1px solid @catalog-border;
 
   @media (min-width: @tablet-width) {
     padding: 0;

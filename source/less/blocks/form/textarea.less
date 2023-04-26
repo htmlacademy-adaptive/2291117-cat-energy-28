@@ -5,13 +5,22 @@
   font-weight: @fw-main;
   font-family: @font-main;
   color: @subtitle;
-  width: 100%;
   padding: 9px 15px;
   border: 1px solid @textarea;
+  width: 280px;
+  height: 150px;
+  resize: none;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
     padding: 10px 19px;
+    width: 631px;
+    height: 174px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
   }
 }
