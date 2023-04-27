@@ -1,9 +1,9 @@
 .copyright {
-  margin-top: 20px;
+  padding-top: 20px;
   width: 100%;
 
   @media (min-width: @tablet-width) {
-    margin-top: 0;
+    padding-top: 0;
     width: 168px;
   }
 }
@@ -15,18 +15,8 @@
   color: @subtitle;
   text-decoration: none;
   position: relative;
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 7.5px 0;
-
-  &::after {
-    content: "";
-    position: absolute;
-    background-image: url("../../../img/htmlacademy.svg");
-    background-repeat: no-repeat;
-    width: 27px;
-    height: 34px;
-    right: 0;
-    top: 0;
-    color: @subtitle;
-  }
 }
