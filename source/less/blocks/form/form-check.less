@@ -12,12 +12,16 @@
   position: relative;
 }
 
+.form-check:hover .form-check__mark {
+  border: 1px solid @input-hover;
+}
+
 .form-check__control[type="checkbox"]:checked + .form-check__mark::before {
   content: "";
   position: absolute;
   background-image: url("../../../img/form-check.svg");
-  width: 18px;
-  height: 14px;
+  width: 26px;
+  height: 26px;
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
@@ -30,4 +34,17 @@
     font-size: 20px;
     line-height: 30px;
   }
+}
+
+.form-check__control:disabled + .form-check__mark {
+  opacity: 0.3;
+
+  &:hover {
+    border: 1px solid @input-border;
+    opacity: 0.3;
+  }
+}
+
+.form-check__control:disabled ~ .form-check__text {
+  opacity: 0.3;
 }

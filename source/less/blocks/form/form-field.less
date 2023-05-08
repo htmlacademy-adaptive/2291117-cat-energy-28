@@ -7,6 +7,7 @@
   color: @subtitle;
   display: flex;
   align-items: center;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -23,9 +24,22 @@
   font-family: @font-main;
   color: @subtitle;
   flex-grow: 1;
-  border: 1px solid @input-border;
+  border: none;
+  outline: 1px solid @textarea;
   box-sizing: border-box;
   padding: 14px 15px;
+
+  &:hover {
+    outline: 1px solid @input-border;
+  }
+
+  &:focus {
+    outline: 2px solid @subtitle;
+  }
+
+  &--error {
+    outline: 2px solid @input-error;
+  }
 
   .form-field__control--target {
     color: @radio-text;
@@ -42,20 +56,23 @@
   }
 }
 
-.form-field__control--email {
-  background-image: url("../../../img/form-email.svg");
-  background-repeat: no-repeat;
-  background-position: right 15px center;
-  background-size: 17px 13px;
-}
-
-.form-field__control--telephone {
-  background-image: url("../../../img/form-telephone.svg");
-  background-repeat: no-repeat;
-  background-position: right 15px center;
-  background-size: 15px 15px;
+.form-field__icon {
+  content: "";
+  position: absolute;
+  right: 14px;
+  top: 15px;
+  fill: @base;
+  stroke: @slider-control;
 }
 
 .form-field__label {
   margin-right: 13px;
+}
+
+.form-field__control:focus + .form-field__icon {
+  stroke: @accent;
+}
+
+.form-field__control--error + .form-field__icon {
+  stroke: @input-error;
 }

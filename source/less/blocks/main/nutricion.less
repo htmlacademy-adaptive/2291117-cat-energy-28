@@ -202,4 +202,22 @@
       top: 10px;
     }
   }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.nutricion__link:hover {
+  &::after {
+    background-image: url("../img/nutricion__link-arrov-hover.svg");
+    width: 32px;
+    right: -39px;
+
+    @media (min-width: @tablet-width) {
+      right: -57px;
+      top: 10px;
+      transition: 0.5s;
+    }
+  }
 }

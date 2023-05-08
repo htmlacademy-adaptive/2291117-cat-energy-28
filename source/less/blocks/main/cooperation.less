@@ -72,44 +72,10 @@
   height: 362px;
   max-width: 100%;
   margin: 0 auto;
-
-  &--nojs {
-    background-image: url("../../../img/location_mobile.jpg");
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: cover;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/location_mobile@2x.jpg");
-    }
-  }
+  position: relative;
 
   @media (min-width: @tablet-width) {
     height: 400px;
-
-    &--nojs {
-      background-image: url("../../../img/location_tablet.jpg");
-      background-repeat: no-repeat;
-      background-position: center top;
-      background-size: cover;
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/location_tablet@2x.jpg");
-      }
-    }
-  }
-
-  @media (min-width: @desktop-width) {
-    &--nojs {
-      background-image: url("../../../img/location_desktop.jpg");
-      background-repeat: no-repeat;
-      background-position: center top;
-      background-size: cover;
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/location_desktop@2x.jpg");
-      }
-    }
   }
 }
 
@@ -118,4 +84,17 @@
   margin: 0 auto;
   width: 100%;
   height: 100%;
+
+  &--nojs {
+    display: none;
+  }
+}
+
+.cooperation__map-image {
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  right: 50%;
+  transform: translateX(50%);
 }

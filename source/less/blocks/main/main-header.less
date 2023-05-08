@@ -6,29 +6,41 @@
   margin: 0 auto;
   max-width: 100%;
   padding: 10px 0 0 0;
+  border-bottom: 1px solid #e6e6e6;
 
   @media (min-width: @tablet-width) {
     max-width: 709px;
     display: flex;
     justify-content: space-between;
     padding: 0 0 74px 0;
+    border-bottom: none;
   }
 
   @media (min-width: @desktop-width) {
     max-width: 1220px;
     padding: 53px 0 102px 0;
+    border-bottom: none;
   }
 }
 
 .main-header__logo {
   display: block;
   position: relative;
-  padding-left: 20px;
-  max-width: 320px;
+  max-width: 280px;
   margin: 0 auto;
+  padding-bottom: 15px;
 
   @media (min-width: @tablet-width) {
     margin: 0;
+    padding-bottom: 0;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
 
     &::after {
       display: none;
