@@ -19,3 +19,29 @@
   width: 132px;
   margin: 0 auto;
 }
+
+.social__icon-vk,
+.social__icon-youtube,
+.social__icon-telegram {
+  fill: @slider-control;
+}
+
+.social__icon-vk:hover,
+.social__icon-youtube:hover,
+.social__icon-telegram:hover {
+  fill: @accent;
+}
+
+.social__link--vkontakte:focus .social__icon-vk,
+.social__link--youtube:focus .social__icon-youtube,
+.social__link--telegram:focus .social__icon-telegram {
+  fill: @accent;
+}
+
+.social__link:focus-visible {
+  outline: none;
+}
+
+.social__link:active {
+  opacity: 0.3;
+}

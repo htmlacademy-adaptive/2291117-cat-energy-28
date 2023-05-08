@@ -19,4 +19,18 @@
   justify-content: space-between;
   align-items: center;
   padding: 7.5px 0;
+  fill: @slider-control;
+
+  &:hover,
+  &:focus {
+    fill: @accent;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

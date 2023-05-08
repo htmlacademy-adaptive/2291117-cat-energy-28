@@ -13,6 +13,10 @@
   position: relative;
 }
 
+.form-radio:hover .form-radio__point {
+  border: 1px solid @input-hover;
+}
+
 .form-radio__control[type="radio"]:checked + .form-radio__point::before {
   content: "";
   position: absolute;
@@ -33,4 +37,17 @@
     line-height: 30px;
     color: @radio-text;
   }
+}
+
+.form-radio__control:disabled + .form-radio__point {
+  opacity: 0.3;
+
+  &:hover {
+    border: 1px solid @input-border;
+    opacity: 0.3;
+  }
+}
+
+.form-radio__control:disabled ~ .form-radio__text {
+  opacity: 0.3;
 }
