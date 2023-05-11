@@ -5,21 +5,25 @@
 .main-header__container {
   margin: 0 auto;
   max-width: 100%;
-  padding: 10px 0 0 0;
+  padding: 9px 0 0 0;
   border-bottom: 1px solid #e6e6e6;
 
   @media (min-width: @tablet-width) {
     max-width: 709px;
     display: flex;
     justify-content: space-between;
-    padding: 0 0 74px 0;
+    padding: 0 0 59px 0;
     border-bottom: none;
   }
 
   @media (min-width: @desktop-width) {
     max-width: 1220px;
-    padding: 53px 0 102px 0;
+    padding: 53px 0 104px 0;
     border-bottom: none;
+
+    &--desktop {
+      padding: 53px 0 68px 0;
+    }
   }
 }
 
@@ -28,11 +32,12 @@
   position: relative;
   max-width: 280px;
   margin: 0 auto;
-  padding-bottom: 15px;
+  padding-bottom: 13px;
 
   @media (min-width: @tablet-width) {
     margin: 0;
     padding-bottom: 0;
+    padding-left: 1px;
 
     &:hover {
       opacity: 0.8;

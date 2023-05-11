@@ -4,12 +4,18 @@
 }
 
 .form-check__mark {
-  width: 30px;
-  height: 30px;
+  width: 29px;
+  height: 29px;
   border: 1px solid @input-border;
   display: inline-block;
   margin-right: 16px;
   position: relative;
+
+  @media (min-width: @tablet-width) {
+    width: 39px;
+    height: 39px;
+    margin-right: 19px;
+  }
 }
 
 .form-check:hover .form-check__mark {
@@ -47,4 +53,9 @@
 
 .form-check__control:disabled ~ .form-check__text {
   opacity: 0.3;
+}
+
+.form-check__control:focus + .form-check__mark {
+  outline: 2px solid @subtitle;
+  outline-offset: 5px;
 }

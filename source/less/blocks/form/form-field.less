@@ -6,12 +6,21 @@
   font-family: @font-main;
   color: @subtitle;
   display: flex;
+  gap: 15px;
   align-items: center;
   position: relative;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+.form-field--master-contacts {
+  gap: 10px;
+
+  @media (min-width: @tablet-width) {
+    gap: 22px;
   }
 }
 
@@ -27,7 +36,7 @@
   border: none;
   outline: 1px solid @textarea;
   box-sizing: border-box;
-  padding: 14px 15px;
+  padding: 13px 20px;
 
   &:hover {
     outline: 1px solid @input-border;
@@ -56,17 +65,33 @@
   }
 }
 
+.form-field__control--master-contacts {
+  padding: 13px 15px;
+
+  @media (min-width: @tablet-width) {
+    padding: 11px 19px;
+  }
+}
+
 .form-field__icon {
   content: "";
   position: absolute;
-  right: 14px;
-  top: 15px;
+  right: 15px;
+  top: 13px;
   fill: @base;
   stroke: @slider-control;
+
+  @media (min-width: @tablet-width) {
+    top: 17px;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: 19px;
+  }
 }
 
 .form-field__label {
-  margin-right: 13px;
+  flex-shrink: 0;
 }
 
 .form-field__control:focus + .form-field__icon {

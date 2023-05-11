@@ -48,20 +48,29 @@
 
 .button--promotion {
   @media (min-width: @tablet-width) {
+    font-size: 20px;
     max-width: 350px;
     border: none;
-    padding: 17px 46px;
+    padding: 17px 28px;
     margin-left: 91px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 79px;
   }
 }
 
 .button--submit {
+  font-size: 16px;
+  line-height: 20px;
+
   @media (min-width: @tablet-width) {
-    padding: 16px 80px;
+    padding: 16px 65px;
+    font-size: 20px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 16px 223px;
+    padding: 16px 207px;
     display: block;
   }
 }
@@ -70,4 +79,11 @@
   @media (min-width: @tablet-width) {
     padding: 10px 65px;
   }
+}
+
+.button--order {
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px 0;
+  width: 100%;
 }

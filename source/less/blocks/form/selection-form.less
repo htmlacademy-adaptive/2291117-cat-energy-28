@@ -9,7 +9,7 @@
   @media (min-width: @desktop-width) {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     margin: 0 auto;
     max-width: 1220px;
   }
@@ -39,7 +39,7 @@
   padding-bottom: 0;
 
   @media (min-width: @tablet-width) {
-    padding-bottom: 6px;
+    padding-bottom: 47px;
   }
 
   @media (min-width: @desktop-width) {
@@ -64,7 +64,7 @@
 }
 
 .selection-form__field:not(:last-child) {
-  margin-bottom: 14px;
+  margin-bottom: 15px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 20px;
@@ -82,7 +82,7 @@
 }
 
 .selection-form__target {
-  padding-top: 28px;
+  padding-top: 21px;
   padding-bottom: 0;
 
   @media (min-width: @tablet-width) {
@@ -132,6 +132,12 @@
       top: 20px;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    &::before {
+      top: 24px;
+    }
+  }
 }
 
 .selection-form__title-inner {
@@ -144,7 +150,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    max-width: 1220px;
+    max-width: 1300px;
   }
 }
 
@@ -186,16 +192,41 @@
   @media (min-width: @tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    margin-bottom: 76px;
-    padding: 0 40px 0 40px;
-  }
-
-  @media (min-width: @desktop-width) {
+    margin-bottom: 75px;
     padding: 0 40px 0 40px;
 
     & br {
       display: none;
     }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 40px 0 40px;
+    margin-bottom: 77px;
+
+    & br {
+      display: none;
+    }
+  }
+}
+
+.selection-form__title--comments {
+  margin-bottom: 38px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 75px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 77px;
+  }
+}
+
+.selection-form__title--additions {
+  margin-bottom: 34px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 56px;
   }
 }
 
@@ -210,6 +241,11 @@
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 16px;
+    margin-top: -5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 0;
   }
 }
 
@@ -232,7 +268,7 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    gap: 64px;
+    gap: 62px;
     max-width: 628px;
   }
 
@@ -242,13 +278,13 @@
     justify-content: flex-start;
     align-items: center;
     max-width: 1220px;
-    width: 830px;
-    gap: 84px;
+    width: 1216px;
+    gap: 81px;
   }
 }
 
 .selection-form__button {
-  margin-bottom: 21px;
+  margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
