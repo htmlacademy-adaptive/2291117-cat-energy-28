@@ -11,6 +11,12 @@
   display: inline-block;
   margin-right: 13px;
   position: relative;
+
+  @media (min-width: @tablet-width) {
+    width: 39px;
+    height: 39px;
+    margin-right: 19px;
+  }
 }
 
 .form-radio:hover .form-radio__point {
@@ -27,6 +33,11 @@
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
+
+  @media (min-width: @tablet-width) {
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .form-radio__text {
@@ -50,4 +61,9 @@
 
 .form-radio__control:disabled ~ .form-radio__text {
   opacity: 0.3;
+}
+
+.form-radio__control:focus + .form-radio__point {
+  outline: 2px solid @subtitle;
+  outline-offset: 5px;
 }

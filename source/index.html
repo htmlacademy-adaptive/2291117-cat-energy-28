@@ -10,6 +10,9 @@
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png"><!-- 180×180 -->
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswald/oswaldmedium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   </head>
   <body class="page-main__body">
     <header class="main-header">
@@ -21,7 +24,7 @@
             <img class="main-header__logo-image" src="img/logo-mobile.svg" width="191" height="37.61" alt="Cat Energy.">
           </picture>
         </a>
-        <nav class="main-nav main-nav--opened main-nav--nojs">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <!--main-nav--closed  меню навигации закрыто-->
           <!--main-nav--opened  меню навигации открыто-->
           <!--main-nav--nojs  меню навигации при неработающем JS-->
@@ -59,8 +62,8 @@
             <source type="image/webp" media="(min-width: 1220px)" srcset="img/promo-chicken-pro-desktop.webp, img/promo-chicken-pro-desktop@2x.webp 2x" width="552" height="499">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/promo-chicken-pro-tablet.webp, img/promo-chicken-pro-tablet@2x.webp 2x" width="709" height="609">
             <source type="image/webp" srcset="img/promo-chicken-pro-mobile.webp, img/promo-chicken-pro-mobile@2x.webp 2x" width="280" height="270">
-            <source media="(min-width: 1220px)" srcset="img/promo-chicken-pro-desktop.png, img/promo-chicken-pro-desktop@2x.png 2x" width="552" height="499">
-            <source media="(min-width: 768px)" srcset="img/promo-chicken-pro-tablet.png, img/promo-chicken-pro-tablet@2x.png 2x" width="709" height="609">
+            <source type="image/png" media="(min-width: 1220px)" srcset="img/promo-chicken-pro-desktop.png, img/promo-chicken-pro-desktop@2x.png 2x" width="552" height="499">
+            <source type="image/png" media="(min-width: 768px)" srcset="img/promo-chicken-pro-tablet.png, img/promo-chicken-pro-tablet@2x.png 2x" width="709" height="609">
             <img class="promotion__image" width="280" height="270" src="img/promo-chicken-pro-mobile.png" srcset="img/promo-chicken-pro-mobile@2x.png 2x" alt="Корм Cat Energy Pro.">
           </picture>
           <a class="promotion__link button button--promotion" href="form.html">
@@ -91,7 +94,7 @@
           <ul class="explanation__list">
             <li class="explanation__item explanation__item-style explanation__item--healthy">
               <p class="explanation__text">Функциональное питание содержит только полезные питательные вещества.</p>
-              <span class="explanation__number">1</span>
+              <span class="explanation__number explanation__number--one">1</span>
             </li>
             <li class="explanation__item explanation__item-style explanation__item--preparation">
               <p class="explanation__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
@@ -102,7 +105,7 @@
               <span class="explanation__number">3</span>
             </li>
             <li class="explanation__item explanation__item-style explanation__item--result">
-              <p class="explanation__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+              <p class="explanation__text">Уже через месяц наслаждайтесь изменениями к лучшему<br> вашего питомца!</p>
               <span class="explanation__number">4</span>
             </li>
           </ul>
@@ -153,7 +156,9 @@
         <div class="cooperation__wrapper">
           <div class="cooperation__container">
             <h2 class="cooperation__title">приглашаем<br> к сотрудничеству<br> дилеров!</h2>
-            <p class="cooperation__contacts-text">ул. Большая<br> Конюшенная, д. 19/8<br> Санкт-Петербург</p>
+            <p class="cooperation__contacts-text">ул. Большая<br> Конюшенная, д. 19/8<br>
+              <span>Санкт-Петербург</span>
+            </p>
           </div>
         </div>
         <div class="cooperation__map-container">
@@ -164,8 +169,8 @@
               <source type="image/webp" media="(min-width: 1220px)" srcset="img/location_desktop.webp, img/location_desktop@2x.webp 2x" width="1440" height="400">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/location_tablet.webp, img/location_tablet@2x.webp 2x" width="768" height="400">
               <source type="image/webp" srcset="img/location_mobile.webp, img/location_mobile@2x.webp 2x" width="320" height="362">
-              <source media="(min-width: 1220px)" srcset="img/location_desktop.jpg, img/location_desktop@2x.jpg 2x" width="1440" height="400">
-              <source media="(min-width: 768px)" srcset="img/location_tablet.jpg, img/location_tablet@2x.jpg 2x" width="768" height="400">
+              <source type="image/jpg" media="(min-width: 1220px)" srcset="img/location_desktop.jpg, img/location_desktop@2x.jpg 2x" width="1440" height="400">
+              <source type="image/jpg" media="(min-width: 768px)" srcset="img/location_tablet.jpg, img/location_tablet@2x.jpg 2x" width="768" height="400">
               <img class="cooperation__map-image" width="320" height="362" src="img/location_mobile.jpg" srcset="img/location_mobile@2x.png 2x" alt="Cat Energy на карте.">
             </picture>
           </noscript>

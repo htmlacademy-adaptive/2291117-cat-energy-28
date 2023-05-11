@@ -11,7 +11,7 @@
   background-color: @nutricion;
 
   @media (min-width: @tablet-width) {
-    padding: 60px 0 56px 0;
+    padding: 56px 0 56px 0;
     background-color: @nutricion;
   }
 
@@ -25,6 +25,7 @@
     position: absolute;
     left: 110px;
     top: 95px;
+    z-index: 10;
   }
 }
 
@@ -52,6 +53,7 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 26px;
+    margin-top: 4px;
   }
 }
 
@@ -62,9 +64,27 @@
   margin: 0;
   color: @subtitle;
 
+  &--mobile {
+    margin-right: 3px;
+  }
+
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 20px;
+    text-align: right;
+    margin-right: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: left;
+    margin-right: 18px;
+  }
+}
+
+.cooperation__contacts-text span {
+  @media (min-width: @tablet-width) {
+    display: block;
+    margin-top: 20px;
   }
 }
 
