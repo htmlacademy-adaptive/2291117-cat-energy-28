@@ -163,7 +163,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 440px;
+    min-width: 440px;
+    max-width: 600px;
   }
 
   .main-nav__item {
@@ -171,8 +172,12 @@
     border: none;
     margin-bottom: 10px;
 
+    @media (min-width: @tablet-width) {
+      max-width: 153px;
+    }
+
     @media (min-width: @desktop-width) {
-      max-width: 280px;
+      max-width: 200px;
     }
   }
 
