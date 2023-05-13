@@ -66,7 +66,7 @@
 }
 
 .form-field__control--master-contacts {
-  padding: 13px 15px;
+  padding: 13px 40px 13px 15px;
 
   @media (min-width: @tablet-width) {
     padding: 11px 19px;
@@ -77,13 +77,10 @@
   content: "";
   position: absolute;
   right: 15px;
-  top: 13px;
+  top: 50%;
+  transform: translateY(-50%);
   fill: @base;
   stroke: @slider-control;
-
-  @media (min-width: @tablet-width) {
-    top: 17px;
-  }
 
   @media (min-width: @desktop-width) {
     right: 19px;
@@ -92,6 +89,11 @@
 
 .form-field__label {
   flex-shrink: 0;
+  max-width: 95px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 150px;
+  }
 }
 
 .form-field__control:focus + .form-field__icon {
