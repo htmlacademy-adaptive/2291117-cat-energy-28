@@ -20,8 +20,8 @@
         <a class="main-header__logo logo" href="index.html">
           <picture>
             <source media="(min-width: 1220px)" srcset="img/logo-desktop.svg" width="202" height="59">
-            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="174" height="51.68">
-            <img class="main-header__logo-image" src="img/logo-mobile.svg" width="191" height="37.61" alt="Cat Energy.">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="174" height="52">
+            <img class="main-header__logo-image" src="img/logo-mobile.svg" width="191" height="38" alt="Cat Energy.">
           </picture>
         </a>
         <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -81,7 +81,8 @@
                 <ul class="target__list">
                   <li class="target__item">
                     <label class="target__radio form-radio">
-                      <input class="form-radio__control visually-hidden" type="radio" name="weight" value="weight-loss" checked="checked" /> <span class="form-radio__point"></span>
+                      <input class="form-radio__control visually-hidden" type="radio" name="weight" value="weight-loss" checked="checked">
+                      <span class="form-radio__point"></span>
                       <span class="form-radio__text form-control form-control--target">Похудение</span>
                     </label>
                   </li>
@@ -106,20 +107,20 @@
           <fieldset class="selection-form__master-contacts master-contacts">
             <div class="selection-form__title-wrapper">
               <div class="selection-form__title-inner">
-                <h2 class="selection-form__title">Контактные данные&nbsp<br>(владельца кота)</h2>
+                <h2 class="selection-form__title">Контактные данные&nbsp;<br>(владельца кота)</h2>
               </div>
             </div>
             <div class="form__header form__header--master-contacts form__wrapper">
               <label class="selection-form__field form-field--master-contacts selection-form__field--master form-field">
                 <span class="form-field__label">E-mail:*</span>
-                <input class="form-field__control form-field__control--email form-field__control--master-contacts" type="text" name="add-name" placeholder="kuklachev@gmail.com" required>
+                <input class="form-field__control form-field__control--email form-field__control--master-contacts" type="email" name="add-name" placeholder="kuklachev@gmail.com" required>
                 <svg class="form-field__icon form-field__icon--email" width="20" height="20">
                   <use href="img/sprite.svg#form-email"></use>
                 </svg>
               </label>
               <label class="selection-form__field form-field--master-contacts selection-form__field--master form-field">
                 <span class="form-field__label">Телефон:*</span>
-                <input class="form-field__control form-field__control--telephone form-field__control--master-contacts" type="text" name="add-name" placeholder="8 (960) 900-60-90" required>
+                <input class="form-field__control form-field__control--telephone form-field__control--master-contacts" type="tel" name="add-name" placeholder="8 (960) 900-60-90" required>
                 <svg class="form-field__icon form-field__icon--telephone" width="20" height="20">
                   <use href="img/sprite.svg#form-telephone"></use>
                 </svg>
